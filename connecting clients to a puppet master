@@ -1,0 +1,8 @@
+Connect client to server
+Once we can ping each server make sure the Puppet Master is running
+
+sudo puppet master
+
+Then we can connect from the client to the server
+
+puppet agent --server puppetmaster --waitforcert 60 --test
